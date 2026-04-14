@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuracion>
+	<WebServices>
+		<WSRFDIDemo>http://10.1.1.47:8088/WSRFIDDemo.asmx</WSRFDIDemo>
+	</WebServices>
+	<ConvertirHexAString>true</ConvertirHexAString>
+	<CSVSeparador>,</CSVSeparador>
+	<FileExtension>.txt</FileExtension>
+	<ZebraAntenaPower>300</ZebraAntenaPower>
+	<FirstUse>True</FirstUse>
+	<Patron Activo="true" Valor="^[a-zA-Z]{2,3}\d+$"/>
+	<AgregarNoIndentTeorico>false</AgregarNoIndentTeorico>
+	<ContarEPC>True</ContarEPC>
+	<TrimTag>0</TrimTag>
+	<License>
+		<Id></Id>
+		<MaxUssedQty>0</MaxUssedQty>
+		<QtyReleased>0</QtyReleased>
+	</License>
+</Configuracion>

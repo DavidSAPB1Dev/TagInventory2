@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Available">
+        <s:complexType />
+      </s:element>
+      <s:element name="AvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AvailableResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadRecuentoSimple">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadRecuentoSimpleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadRecuentoSimpleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadRecuento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadRecuentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadRecuentoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:Available" />
+  </wsdl:message>
+  <wsdl:message name="AvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:AvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadRecuentoSimpleSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadRecuentoSimple" />
+  </wsdl:message>
+  <wsdl:message name="LoadRecuentoSimpleSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadRecuentoSimpleResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadRecuentoSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadRecuento" />
+  </wsdl:message>
+  <wsdl:message name="LoadRecuentoSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadRecuentoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSRFIDDemoSoap">
+    <wsdl:operation name="Available">
+      <wsdl:input message="tns:AvailableSoapIn" />
+      <wsdl:output message="tns:AvailableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadRecuentoSimple">
+      <wsdl:input message="tns:LoadRecuentoSimpleSoapIn" />
+      <wsdl:output message="tns:LoadRecuentoSimpleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadRecuento">
+      <wsdl:input message="tns:LoadRecuentoSoapIn" />
+      <wsdl:output message="tns:LoadRecuentoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSRFIDDemoSoap" type="tns:WSRFIDDemoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Available">
+      <soap:operation soapAction="http://tempuri.org/Available" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadRecuentoSimple">
+      <soap:operation soapAction="http://tempuri.org/LoadRecuentoSimple" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadRecuento">
+      <soap:operation soapAction="http://tempuri.org/LoadRecuento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSRFIDDemoSoap12" type="tns:WSRFIDDemoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Available">
+      <soap12:operation soapAction="http://tempuri.org/Available" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadRecuentoSimple">
+      <soap12:operation soapAction="http://tempuri.org/LoadRecuentoSimple" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadRecuento">
+      <soap12:operation soapAction="http://tempuri.org/LoadRecuento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSRFIDDemo">
+    <wsdl:port name="WSRFIDDemoSoap" binding="tns:WSRFIDDemoSoap">
+      <soap:address location="http://10.1.1.47:8088/WSRFIDDemo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSRFIDDemoSoap12" binding="tns:WSRFIDDemoSoap12">
+      <soap12:address location="http://10.1.1.47:8088/WSRFIDDemo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
