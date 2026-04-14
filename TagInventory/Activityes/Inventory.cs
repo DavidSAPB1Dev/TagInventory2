@@ -157,6 +157,10 @@ namespace TagInventory.Activityes
 
                 //TagList = new List<TagData>();
                 TagList = new List<GenericTag>();
+                ItmRecuentoList = new List<ItemRecuento>();
+
+                baseAdapterInventoryListView.RecuentoList = ItmRecuentoList;
+
                 inventoryListView.Adapter = baseAdapterInventoryListView;
 
                 btt_Subir = (Button)FindViewById(Resource.Id.button_subir);
@@ -203,7 +207,6 @@ namespace TagInventory.Activityes
                 utilerias.ShowMessage(string.Format("Ocurrió un error inesperado.\n{0}", ex.Message), System.Reflection.MethodBase.GetCurrentMethod().Name, this);
             }
         }
-
         private void Btt_Buscar_Click(object sender, EventArgs e)
         {
             if (btt_Buscar.Text == "Quitar")
@@ -228,6 +231,7 @@ namespace TagInventory.Activityes
                     searchList = ItmRecuentoList.FindAll(it => it.TagInfoList.Count > 0);
                 else if (!string.IsNullOrEmpty(itmCode))
                     searchList = ItmRecuentoList.FindAll(it => it.StringValue.ToUpper().Contains(itmCode.ToUpper()));
+
 
                 if (searchList.Count > 0)
                 {
@@ -813,7 +817,8 @@ namespace TagInventory.Activityes
 
                         A.RunOnUiThread(() =>
                         {
-                            baseAdapterInventoryListView.AddRecuentoItem(item);
+                            AddRecuentoItem(item);
+                            //baseAdapterInventoryListView.AddRecuentoItem(item);
                             baseAdapterInventoryListView.NotifyDataSetChanged();
                             btt_Subir.Enabled = baseAdapterInventoryListView.RecuentoList.Count > 0;
                             btt_Borrar.Enabled = baseAdapterInventoryListView.RecuentoList.Count > 0; ;
@@ -829,6 +834,14 @@ namespace TagInventory.Activityes
             }
             catch (System.Exception ex)
             { }
+        }
+        public void AddRecuentoItem(ItemRecuento Item)
+        {
+            if (Item.lType != null)
+                ItmRecuentoList.Add(Item);
+            else
+                if (ItmRecuentoList.FindAll(t => t.HexValue == Item.HexValue).Count == 0)
+                ItmRecuentoList.Add(Item);
         }
         void displayStatus(string status)
         {
@@ -1351,7 +1364,6 @@ namespace TagInventory.Activityes
                         else
                             baseAdapterInventoryListView.Clear();
 
-
                         baseAdapterInventoryListView.NotifyDataSetChanged();
                         textViewtitle.Text = string.Format("Tags {0}", baseAdapterInventoryListView.RecuentoList.Count);
                         btt_Subir.Enabled = false;
@@ -1594,6 +1606,7 @@ namespace TagInventory.Activityes
                         //HerStyler, se encontró que estos tags al leer el TID, en ocasiones manda un TID distinto (caso playerytees), para evitar esto se recorta el tag a 24 caracteres 07/02/2025
                         if (configuraciones.TrimTag > 0) item.HexValue = item.HexValue[..configuraciones.TrimTag];
                         if ((IType == InventoryType.Blind) || (IType == InventoryType.Theoric && configuraciones.AgregarNoIdent))
+
                             baseAdapterInventoryListView.AddRecuentoItem(item);
                         UpdateUI();
                     });

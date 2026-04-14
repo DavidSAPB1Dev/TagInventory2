@@ -3273,10 +3273,13 @@ namespace TagInventory
 			public const int BtnInventarioDocumento = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int BtnRFIDRead = 2131165291;
+			public const int btnInventarioDocumentoDisabled = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int BtnRFIDReadDisable = 2131165292;
+			public const int BtnRFIDRead = 2131165292;
+			
+			// aapt resource value: 0x7F07006D
+			public const int BtnRFIDReadDisable = 2131165293;
 			
 			// aapt resource value: 0x7F07005F
 			public const int btn_checkbox_checked_mtrl = 2131165279;
@@ -3302,158 +3305,158 @@ namespace TagInventory
 			// aapt resource value: 0x7F070066
 			public const int btn_radio_on_to_off_mtrl_animation = 2131165286;
 			
-			// aapt resource value: 0x7F07006D
-			public const int btt_strokeNeg = 2131165293;
-			
 			// aapt resource value: 0x7F07006E
-			public const int buttonDesign = 2131165294;
+			public const int btt_strokeNeg = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int buttonPotencia = 2131165295;
+			public const int buttonDesign = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int DataMatrix = 2131165296;
+			public const int buttonPotencia = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int DefaultBarCode = 2131165297;
+			public const int DataMatrix = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int design_bottom_navigation_item_background = 2131165298;
+			public const int DefaultBarCode = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int design_fab_background = 2131165299;
+			public const int design_bottom_navigation_item_background = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int design_ic_visibility = 2131165300;
+			public const int design_fab_background = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int design_ic_visibility_off = 2131165301;
+			public const int design_ic_visibility = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int design_password_eye = 2131165302;
+			public const int design_ic_visibility_off = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int design_snackbar_background = 2131165303;
+			public const int design_password_eye = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int EAN13 = 2131165304;
+			public const int design_snackbar_background = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int ettStroke = 2131165305;
+			public const int EAN13 = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int ettStrokeError = 2131165306;
+			public const int ettStroke = 2131165306;
 			
 			// aapt resource value: 0x7F07007B
-			public const int FondoAlmacenamiento = 2131165307;
+			public const int ettStrokeError = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int FondoLista = 2131165308;
+			public const int FondoAlmacenamiento = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int FondoMenu = 2131165309;
-			
-			// aapt resource value: 0x7F070081
-			public const int IcoApp = 2131165313;
-			
-			// aapt resource value: 0x7F070082
-			public const int IcoBD = 2131165314;
-			
-			// aapt resource value: 0x7F070083
-			public const int IcoBDDisabled = 2131165315;
-			
-			// aapt resource value: 0x7F070084
-			public const int IcoCSV = 2131165316;
-			
-			// aapt resource value: 0x7F070085
-			public const int IcoCSVDisabled = 2131165317;
+			public const int FondoLista = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int ic_mtrl_chip_checked_black = 2131165310;
+			public const int FondoMenu = 2131165310;
 			
-			// aapt resource value: 0x7F07007F
-			public const int ic_mtrl_chip_checked_circle = 2131165311;
+			// aapt resource value: 0x7F070082
+			public const int IcoApp = 2131165314;
 			
-			// aapt resource value: 0x7F070080
-			public const int ic_mtrl_chip_close_circle = 2131165312;
+			// aapt resource value: 0x7F070083
+			public const int IcoBD = 2131165315;
+			
+			// aapt resource value: 0x7F070084
+			public const int IcoBDDisabled = 2131165316;
+			
+			// aapt resource value: 0x7F070085
+			public const int IcoCSV = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int mtrl_snackbar_background = 2131165318;
+			public const int IcoCSVDisabled = 2131165318;
+			
+			// aapt resource value: 0x7F07007F
+			public const int ic_mtrl_chip_checked_black = 2131165311;
+			
+			// aapt resource value: 0x7F070080
+			public const int ic_mtrl_chip_checked_circle = 2131165312;
+			
+			// aapt resource value: 0x7F070081
+			public const int ic_mtrl_chip_close_circle = 2131165313;
 			
 			// aapt resource value: 0x7F070087
-			public const int mtrl_tabs_default_indicator = 2131165319;
+			public const int mtrl_snackbar_background = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int navigation_empty_icon = 2131165320;
+			public const int mtrl_tabs_default_indicator = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int notification_action_background = 2131165321;
+			public const int navigation_empty_icon = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int notification_bg = 2131165322;
+			public const int notification_action_background = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int notification_bg_low = 2131165323;
+			public const int notification_bg = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int notification_bg_low_normal = 2131165324;
+			public const int notification_bg_low = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int notification_bg_low_pressed = 2131165325;
+			public const int notification_bg_low_normal = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int notification_bg_normal = 2131165326;
+			public const int notification_bg_low_pressed = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int notification_bg_normal_pressed = 2131165327;
+			public const int notification_bg_normal = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int notification_icon_background = 2131165328;
+			public const int notification_bg_normal_pressed = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int notification_template_icon_bg = 2131165329;
+			public const int notification_icon_background = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int notification_template_icon_low_bg = 2131165330;
+			public const int notification_template_icon_bg = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int notification_tile_bg = 2131165331;
+			public const int notification_template_icon_low_bg = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int notify_panel_notification_icon_bg = 2131165332;
+			public const int notification_tile_bg = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int Pdf417 = 2131165333;
+			public const int notify_panel_notification_icon_bg = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int Potencia1 = 2131165334;
+			public const int Pdf417 = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int Potencia2 = 2131165335;
+			public const int Potencia1 = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int Potencia3 = 2131165336;
+			public const int Potencia2 = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int Potencia4 = 2131165337;
+			public const int Potencia3 = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int QR = 2131165338;
+			public const int Potencia4 = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int rfid = 2131165339;
+			public const int QR = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int SplashScreen = 2131165340;
+			public const int rfid = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int tooltip_frame_dark = 2131165341;
+			public const int SplashScreen = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int tooltip_frame_light = 2131165342;
+			public const int tooltip_frame_dark = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int UPCA = 2131165343;
+			public const int tooltip_frame_light = 2131165343;
+			
+			// aapt resource value: 0x7F0700A0
+			public const int UPCA = 2131165344;
 			
 			static Drawable()
 			{

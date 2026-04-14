@@ -158,11 +158,13 @@ namespace TagInventory.Activityes
             {
                 bttRecuento.SetBackgroundResource(Resource.Drawable.BtnRFIDRead);
                 bttConfig.SetBackgroundResource(Resource.Drawable.BtnConfig);
+                bttRecuentoTeorico.SetBackgroundResource(Resource.Drawable.BtnInventarioDocumento);
             }
             else
             {
                 bttRecuento.SetBackgroundResource(Resource.Drawable.BtnRFIDReadDisable);
                 bttConfig.SetBackgroundResource(Resource.Drawable.BtnConfigDisable);
+                bttRecuentoTeorico.SetBackgroundResource(Resource.Drawable.btnInventarioDocumentoDisabled);
             }
         }
         private void ShowLicense()
